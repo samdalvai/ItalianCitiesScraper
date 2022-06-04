@@ -7,6 +7,6 @@ A simple python tool to gather data on Italian cities and create an xml file. Th
 
 ## How to run
 
-* Run `python provinces/provincesScripts.py`
-* Run `python cities/citiesScripts.py`
+* From inside the `provinces/` folder run `python provincesScripts.py`
+* From inside the `cities/` folder run `python citiesScripts.py`
 * The scripts will first create a json file with all the required data, and then convert it into an xlsx file which can be used with an arbitraty xlsx editor, like Microsoft Excel.
