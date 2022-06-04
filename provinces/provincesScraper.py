@@ -33,6 +33,9 @@ def get_load(zone):
         return -1
 
 def run():
+
+    print("Scraping provinces data...")
+
     page = requests.get("https://it.wikipedia.org/wiki/Province_d%27Italia")
     soup = BeautifulSoup(page.content, 'html.parser')
     #print (soup.prettify())
@@ -42,7 +45,7 @@ def run():
     try: 
         os.mkdir('json/') 
     except OSError as error: 
-        print(error)  
+        print("Directory json/ already present")   
 
     out = open('json/provinces.json', 'w', encoding='utf-8')
     out.write('{' + "\n" + "\t" + "\"provinces\": [" + "\n")

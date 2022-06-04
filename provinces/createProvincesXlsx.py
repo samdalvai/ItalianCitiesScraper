@@ -4,11 +4,13 @@ from decimal import Decimal
 import os
 
 def run():
+
+    print("Creating provinces xlsx...")
     
     try: 
         os.mkdir('xlsx/') 
     except OSError as error: 
-        print(error)  
+        print("Directory xlsx/ already present") 
 
     # Create a workbook and add a worksheet.
     workbook = xlsxwriter.Workbook('xlsx/provinces.xlsx')
@@ -32,7 +34,6 @@ def run():
     worksheet.write(row,col+3,'Carico base',bold)
 
     row += 1
-
 
         # {
         # 	"name": "Terni",
