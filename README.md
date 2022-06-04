@@ -1,5 +1,5 @@
 # ItalianCitiesScraper
-A simple python tool to gather data on Italian cities and create an xml file. The data gathered is of interest to performing snow load computations, for example the altitude, the province and the climatic zones are parsed. The data is scraped from the Wikipedia.
+A simple `Python` tool to gather data on Italian cities and convert it in a `xlsx` file. The data gathered is of interest to performing snow load computations, for example the altitude, the province and the climatic zones are parsed. The data is scraped from the Wikipedia website.
 
 ## Requirements
 
