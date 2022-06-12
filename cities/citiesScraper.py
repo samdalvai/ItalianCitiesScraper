@@ -111,7 +111,7 @@ def run():
                                         print("Nothing found for: " + cities[x].replace("\n",""))
 
         # find elevation in elements
-        altitudeRaw = extractRegexFromText(nodes,r'Altitudine[0-9]+\s?([0-9]+)?',"")
+        altitudeRaw = extractRegexFromText(nodes,r'Altitudine[0-9]+\s?(,)?([0-9]+)?',"")
         capRaw = extractRegexFromText(nodes,r'postale[0-9]{5}',"")
         if capRaw == "":
             capRaw = extractRegexFromText(nodes,r'postaleda [0-9]{5}',"")
