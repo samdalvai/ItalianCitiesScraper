@@ -132,10 +132,13 @@ dmypy.json
 ## project related files
 .json
 .xlsx
+.sql
 
 provinces/json/
 provinces/xlsx/
+provinces/sql/
 
 cities/json/
 cities/xlsx/
+cities/sql/
 comuniFormatted.txt
