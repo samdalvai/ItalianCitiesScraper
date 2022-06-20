@@ -21,7 +21,7 @@ def run():
         index = 0
 
         for p in data['provinces']:
-            name = p['name'].replace("'","''").upper()   
+            name = p['name'].replace("'","''")  
 
             out.write("(")
             out.write("'" + p['shorthand'] + "'" + ",")
