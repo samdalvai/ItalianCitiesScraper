@@ -28,7 +28,7 @@ def run():
 
                 out.write("(")
                 out.write("'" + p['cap'] + "'" + ",")
-                out.write("'" + name.upper() + "'" + ",")
+                out.write("'" + name + "'" + ",")
                 out.write("'" + p['province'] + "'" +  ",")
                 if p['altitude'] == -1:
                     out.write(str(0))
